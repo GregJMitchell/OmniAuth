@@ -1,0 +1,22 @@
+<h1>Welcome, <%= current_user.username %></h1>
+
+<table>
+    <tr>
+      <th>Public Repos</th>
+      <th>Private Repos</th>
+    </tr>
+    <div id='repos-table'>
+      <% @repos[:public].each do |repo|%>
+      <tr>
+        <td class='title'>
+          <p><%= repo.name %></p>
+        </td>
+      <% end%>
+         <% @repos[:private].each do |repo|%>
+        <td class='title'>
+          <p><%= repo.name %></p>
+        </td>
+      </tr>
+      <% end%>
+    </div>
+  </table>
