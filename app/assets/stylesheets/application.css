@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+table {
+  display: flex;
+}
+
+#repos-table{
+  float: left;
+}
+#repos-private{
+  float: left;
+}
